@@ -34,15 +34,15 @@
 /*General settings*/
 *{
     margin: 0;
-    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Roboto';
     color: #818181;
-    overflow-x: hidden !important;
-    max-width: 100vw;
-    max-height: 100vh;
 }
 
 .title {
@@ -52,11 +52,12 @@ body {
     font-style: normal ;
 }
 
-.subtitle-v1{
+.subtitle-hs{
     font-family: "Anton", sans-serif ;
     font-size: 3rem ;
     letter-spacing: .0.8rem;
     font-weight: 400 ;
+    line-height: 1.2;
     font-style: normal ;
 }
 
@@ -96,13 +97,9 @@ h4 {
 
 /*Navbar*/
 .navbar {
-    margin-bottom: 0;
     background-color: var(--mainColor);
-    z-index: 9999;
-    border: 0;
     font-size: 12px;
     letter-spacing: 2px;
-    border-radius: 0;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -129,13 +126,12 @@ h4 {
     font-size: 200px;
 }
 
-.navbar-toggle:focus,
-.navbar-toggle:active,
-.navbar-toggle-icon:focus,
-.navbar-toggle-icon:active {
-    background-color: none; /* Altere para a cor desejada */
+.navbar-toggle:focus{
     border: none;
-    color: none;
+}
+
+.navbar-toggle.clicked{
+    background-color: black;
 }
 
 
@@ -147,6 +143,12 @@ h4 {
     align-items: center;
     height: 100vh;
     padding: 0 20%;
+}
+
+.herosection .btn{
+    margin: 15px 0;
+    background-color: var(--mainColor);
+    color: var(--white);
 }
 
 /*Courses*/
@@ -268,6 +270,20 @@ footer .glyphicon {
     color: var(--white);
 }
 
+.divisor{
+    height: 275px;/*Altura da linha*/
+    border-left: 2px solid;
+    border-color: white;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts p{
+    font-size: 1.2rem;
+}
 
 /*Animation*/
 .slideanim {
@@ -307,6 +323,16 @@ footer .glyphicon {
 
 /*Responsive settings*/
 @media screen and (max-width: 768px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Roboto';
+        color: #818181;
+    }
+
+
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
@@ -316,7 +342,6 @@ footer .glyphicon {
         margin-bottom: 35px;
     }
 
-    /*Container fluid para mobile*/
     .container-fluid{
         padding: 7% 5%;
         background-color: var(--slate100);
@@ -333,11 +358,17 @@ footer .glyphicon {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        padding: 0% 5%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5%;
     }
 
     .panel-fluid{
         display: contents !important;
+    }
+
+    .divisor{
+        display: none;
     }
 }
 
