@@ -38,7 +38,7 @@
                         <li><a href="#courses">Cursos</a></li>
                         <li><a href="#plans">Planos</a></li>
                         <li><a href="#about">Sobre nós</a></li>
-                        <li><a href="">Entrar</a></li>
+                        <li><a href="/entrar">Entrar</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <h1 class="title" style="color: #303030">Clube de Formação de Atiradores</h1>
                 <h4 class="subtitle-hs" style="color: #616161">Descubra a precisão.<br>Sinta a emoção.<br>Junte-se à elite do tiro!</h4>
                 <p>Aprimore suas habilidades de tiro e faça parte de nossa comunidade apaixonada. Seja você um novato ou um especialista, oferecemos treinamento de classe mundial e eventos emocionantes. Junte-se a nós agora para uma experiência única!</p>
-                <button class="btn btn-lg end-0">Filie-se agora</button>
+                <a href="/cadastrar"><button class="btn btn-lg end-0">Filie-se agora</button></a>
                 <a href="#services"><p>Ou saiba mais sobre nosso clube &rarr;</p></a>
             </div>
         </section>
