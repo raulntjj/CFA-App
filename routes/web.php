@@ -1,19 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 
-Route::get('/', function () {
-    return view('landingPage');
-});
+Route::view('/', 'welcome');
 
-Route::get('/entrar', function(){
-    return view('signin');
-});
+Route::view('dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
-Route::get('/cadastrar', function(){
-    return view('signup');
-});
-
+Route::view('profile', 'profile')
+    ->middleware(['auth'])
+    ->name('profile');
 
 require __DIR__.'/auth.php';

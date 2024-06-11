@@ -1,56 +1,31 @@
-.card-container {
+.card {
     background-color: white;
-    padding: 5%;
-    height: 50%;
-    width: 50%;
-    min-width: 40%;
+    padding: 0px 50px 50px 50px;
+    width: 30rem;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-container-header {
-    text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.btn-login{
+.form-control,
+.form-select,
+.btn
+.form-check-label{
     padding: 10px;
     border-radius: 8px;
-    background-color: var(--mainColor);
-    border: none;
-    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
-.btn-login:hover{
+.page-link{
+    display: flex;
+    align-items: center;
     padding: 10px;
-    border-radius: 8px;
-    background-color: var(--hoverBlue);
-    color: white;
 }
 
-.btn-register{
+.btn-nav{
     padding: 10px;
-    border-radius: 8px;
-    background-color: var(--green);
-    border: none;
-    color: white;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.btn-register:hover{
-    padding: 10px;
-    border-radius: 8px;
-    background-color: var(--hoverGreen);
-    border: none;
-    color: white;
-}
-
-.logo{
-    width: 30%;
-    height: 30%;
-}
-
-.form-control{
-    padding: 20px;
-    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
 }
